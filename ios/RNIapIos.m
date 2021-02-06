@@ -620,7 +620,7 @@ RCT_EXPORT_METHOD(getPendingTransactions:(RCTPromiseResolveBlock)resolve
                          product.productIdentifier, @"productId",
                          [product.price stringValue], @"price",
                          currencyCode, @"currency",
-                         countryCode, @"countryCode",
+                         countryCode ? countryCode : @"", @"countryCode",
                          itemType, @"type",
                          product.localizedTitle ? product.localizedTitle : @"", @"title",
                          product.localizedDescription ? product.localizedDescription : @"", @"description",
